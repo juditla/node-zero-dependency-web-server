@@ -45,7 +45,7 @@ const server = http.createServer(function (req, res) {
       if (error) {
         console.log(error);
       } else {
-        es.writeHead(200, { 'Content-Type': 'text/html' });
+        res.writeHead(200, { 'Content-Type': 'text/html' });
         res.write(content);
         res.end();
       }
